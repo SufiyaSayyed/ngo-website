@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Heart, Leaf } from "lucide-react";
+import { Menu, X, Heart } from "lucide-react";
+import Image from "next/image";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -47,14 +48,26 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16 py-3">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: "linear-gradient(135deg, #2E7D32, #4CAF50)" }}>
-                <Leaf className="w-5 h-5 text-white" />
-              </div>
+              <Image
+                src="/logo.jpeg"
+                alt="Ruchi Foundation Logo"
+                width={50}
+                height={50}
+                className="h-10 w-auto rounded-3xl object-contain"
+              />
               <div>
-                <div className={`font-display text-lg leading-tight ${transparent ? "text-white" : "text-gray-900"}`}>
+                <div
+                  className={`font-display text-lg leading-tight ${
+                    transparent ? "text-white" : "text-gray-900"
+                  }`}
+                >
                   Ruchi
                 </div>
-                <div className={`text-[10px] tracking-widest uppercase font-medium ${transparent ? "text-green-200" : "text-green-600"}`}>
+                <div
+                  className={`text-[10px] tracking-widest uppercase font-medium ${
+                    transparent ? "text-green-200" : "text-green-600"
+                  }`}
+                >
                   Foundation
                 </div>
               </div>
@@ -82,8 +95,14 @@ export default function Navbar() {
                     {active && (
                       <motion.div
                         layoutId="nav-indicator"
-                        className={`absolute bottom-0.5 left-3 right-3 h-0.5 rounded-full ${transparent ? "bg-white" : "bg-green-600"}`}
-                        transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                        className={`absolute bottom-0.5 left-3 right-3 h-0.5 rounded-full ${
+                          transparent ? "bg-white" : "bg-green-600"
+                        }`}
+                        transition={{
+                          type: "spring",
+                          stiffness: 400,
+                          damping: 30,
+                        }}
                       />
                     )}
                   </Link>
@@ -106,7 +125,9 @@ export default function Navbar() {
               <Link
                 href="/donation"
                 className="flex items-center gap-1.5 text-sm font-semibold px-5 py-2.5 rounded-xl text-white transition-all duration-200 hover:shadow-lg hover:scale-105 active:scale-100"
-                style={{ background: "linear-gradient(135deg, #2E7D32, #4CAF50)" }}
+                style={{
+                  background: "linear-gradient(135deg, #2E7D32, #4CAF50)",
+                }}
               >
                 <Heart className="w-4 h-4" />
                 Donate
@@ -116,9 +137,15 @@ export default function Navbar() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className={`md:hidden p-2 rounded-lg ${transparent ? "text-white" : "text-gray-700"}`}
+              className={`md:hidden p-2 rounded-lg ${
+                transparent ? "text-white" : "text-gray-700"
+              }`}
             >
-              {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {menuOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
             </button>
           </div>
         </div>
@@ -158,7 +185,9 @@ export default function Navbar() {
                 <Link
                   href="/donation"
                   className="text-center flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-white font-semibold"
-                  style={{ background: "linear-gradient(135deg, #2E7D32, #4CAF50)" }}
+                  style={{
+                    background: "linear-gradient(135deg, #2E7D32, #4CAF50)",
+                  }}
                 >
                   <Heart className="w-4 h-4" />
                   Donate Now

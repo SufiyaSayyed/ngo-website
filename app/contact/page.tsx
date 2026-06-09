@@ -29,9 +29,9 @@ export default function ContactPage() {
 
               <div className="mt-10 space-y-6">
                 {[
-                  { icon: MapPin, title: "Visit Us", text: "12, Seva Bhavan, Parel, Mumbai 400 012, Maharashtra, India" },
-                  { icon: Mail, title: "Email", text: "ruchifoundation.org" },
-                  { icon: Phone, title: "Phone", text: "+91 22 2233 4455" },
+                  { icon: MapPin, title: "Visit Us", text: "Office 11-12, Venus Book, Nr Chatrapati Shivaji Maharaj Statue, Pune-40" },
+                  { icon: Mail, title: "Email", text: "info.rfpune@gmail.com" },
+                  { icon: Phone, title: "Phone", text: "+91-8551887007, +91-9156484755" },
                   { icon: Clock, title: "Office Hours", text: "Mon–Fri: 9:00 AM – 6:00 PM\nSat: 10:00 AM – 2:00 PM" },
                 ].map(({ icon: Icon, title, text }, i) => (
                   <AnimatedSection key={i} delay={i * 0.1}>

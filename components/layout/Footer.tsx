@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Leaf, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const SocialIcons = [
   { label: "Facebook", path: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" },
@@ -35,9 +36,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: "linear-gradient(135deg, #2E7D32, #4CAF50)" }}>
-                <Leaf className="w-5 h-5 text-white" />
-              </div>
+               <Image
+                              src="/logo.jpeg"
+                              alt="Ruchi Foundation Logo"
+                              width={50}
+                              height={50}
+                              className="h-10 w-auto rounded-3xl object-contain"
+                            />
               <div>
                 <div className="font-display text-lg text-white leading-tight">Ruchi</div>
                 <div className="text-[10px] tracking-widest uppercase text-green-400">Foundation</div>
@@ -96,15 +101,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-400">12, Seva Bhavan, Parel, Mumbai 400 012, Maharashtra, India</span>
+                <span className="text-sm text-gray-400">Office 11-12, Venus Book, Nr Chatrapati Shivaji Maharaj Statue, Pune-40</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-green-400 shrink-0" />
-                <a href="tel:+912222334455" className="text-sm text-gray-400 hover:text-green-400 transition-colors">+91 22 2233 4455</a>
+                <a href="tel:+912222334455" className="text-sm text-gray-400 hover:text-green-400 transition-colors">+91-8551887007, +91-9156484755</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-green-400 shrink-0" />
-                <a href="mailto:ruchifoundation.org" className="text-sm text-gray-400 hover:text-green-400 transition-colors">ruchifoundation.org</a>
+                <a href="mailto:ruchifoundation.org" className="text-sm text-gray-400 hover:text-green-400 transition-colors">info.rfpune@gmail.com</a>
               </li>
             </ul>
           </div>

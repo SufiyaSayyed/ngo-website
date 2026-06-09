@@ -12,7 +12,7 @@ export default function HomePage() {
       <MissionSection />
       <ImpactStats />
       <FeaturedProjects />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CTASection />
     </>
   );
