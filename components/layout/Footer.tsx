@@ -44,8 +44,8 @@ export default function Footer() {
                               className="h-10 w-auto rounded-3xl object-contain"
                             />
               <div>
-                <div className="font-display text-lg text-white leading-tight">Ruchi</div>
-                <div className="text-[10px] tracking-widest uppercase text-green-400">Foundation</div>
+                <div className="font-display text-lg text-white leading-tight">Ruchi Foundation</div>
+                <div className="text-[8px] tracking-widest uppercase text-green-400">Rising &bull; Underprivileged &bull; Hope &bull; Inspiration</div>
               </div>
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed mb-6">
@@ -101,7 +101,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-400">Office 11-12, Venus Book, Nr Chatrapati Shivaji Maharaj Statue, Pune-40</span>
+                <span className="text-sm text-gray-400">Office 11-12, Venus Nook, Nr Chatrapati Shivaji Maharaj Statue, Pune-40</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-green-400 shrink-0" />

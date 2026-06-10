@@ -61,14 +61,14 @@ export default function Navbar() {
                     transparent ? "text-white" : "text-gray-900"
                   }`}
                 >
-                  Ruchi
+                  Ruchi Foundation
                 </div>
                 <div
                   className={`text-[10px] tracking-widest uppercase font-medium ${
                     transparent ? "text-green-200" : "text-green-600"
                   }`}
                 >
-                  Foundation
+                  Rising &bull; Underprivileged &bull; Hope &bull; Inspiration
                 </div>
               </div>
             </Link>

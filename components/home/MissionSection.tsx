@@ -78,7 +78,7 @@ export default function MissionSection() {
                 <div className="mt-3 flex items-center gap-3">
                   <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80" alt="Founder" className="w-9 h-9 rounded-full object-cover" />
                   <div>
-                    <div className="text-sm font-semibold text-gray-800">Dr. Ananya Krishnan</div>
+                    <div className="text-sm font-semibold text-gray-800">Yogita Suryawanshi</div>
                     <div className="text-xs text-gray-500">Founder, Ruchi Foundation</div>
                   </div>
                 </div>
